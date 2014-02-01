@@ -21,6 +21,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	graphite.vm.box="centos-6.4"
 	graphite.vm.hostname = "graphite.tobyjackson.net"
     graphite.vm.network "private_network", ip: "192.168.50.10"
+	graphite.vm.network "forwarded_port", guest: 80, host: 8080
+
   end
   
   config.vm.define "sonar" do |sonar|

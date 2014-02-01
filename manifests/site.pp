@@ -13,3 +13,7 @@ node "graphite.tobyjackson.net" {
   iptables::allow { 'tcp/7002': port => '7002', protocol => 'tcp' }
   
 }
+
+node "sonar.tobyjackson.net" {
+  notice("Configuring node 'sonar'")
+}
