@@ -2,6 +2,10 @@
 
 ## Vagrant configuration
 
+### Box Base
+
+    vagrant box add centos-6.4 http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-x86_64-v20130731.box
+
 ### Auto-manage Guest Additions
 
 Install (vagrant-vbguest)[https://github.com/dotless-de/vagrant-vbguest] with the following command;
